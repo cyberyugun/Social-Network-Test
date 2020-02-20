@@ -1,0 +1,69 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <a [routerLink]="[ '/home']" style="text-decoration: none;">
+                <span style="color: blanchedalmond;font-size: 40px;font-weight: 400;"> Social</span>
+                <span style="color: blanchedalmond;font-size: 40px;font-weight: 100;">Network</span>
+            </a>
+            
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class=" search-query form-control" [(ngModel)]="search" (keyup.enter)="searchData(search)" placeholder="Search" />
+                    <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button" (click)="searchData(search)">
+                        <span class="fa fa-search"></span>
+                    </button>
+                    </span>
+                </div>
+            </div>
+
+            <button class="btn"><i class="fa fa-upload"></i> Upload</button>
+            <button class="btn" style="margin-left: 10px;"><i class="fa fa-user"></i></button>
+            <div style="color: blanchedalmond; margin-left: 10px;margin-top: 0px;">
+                <div style="text-align: right;margin-bottom: -10px;"><span class="badge badge-pill badge-blanchedalmond">1</span></div>
+                <span style="font-size: 18px;line-height: 1px;">Yudi</span>
+                
+                <p style="font-size: 14px;line-height: 1;">Gunawan</p>
+            </div>
+        </div>
+        <div style="border-top: 1px solid blanchedalmond;border-bottom: 1px solid blanchedalmond;height: 40px;">
+            <ul class="breadcrumb">
+                <li><a [routerLink]="[ '/video']">Videos</a></li>
+                <li><a [routerLink]="[ '/']">People</a></li>
+                <li><a [routerLink]="[ '/']">Documents</a></li>
+                <li><a [routerLink]="[ '/']">Events</a></li>
+                <li><a [routerLink]="[ '/']">Comunities</a></li>
+                <li><a [routerLink]="[ '/']">Favorites</a></li>
+                <li><a [routerLink]="[ '/channel']">Channels</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<router-outlet></router-outlet>
+<footer style="margin-top: 100px;font-size: 12px;">
+    <div class="container">
+        <hr style="border:1px solid blanchedalmond">
+        <button class="btn" style="margin-left: 10px;"><i class="fa fa-twitter"></i></button>
+        <button class="btn" style="margin-left: 10px;"><i class="fa fa-linkedin"></i></button>
+        <button class="btn" style="margin-left: 10px;"><i class="fa fa-facebook"></i></button>
+        <div style="margin-top: 30px;">
+            <ul class="breadcrumb">
+                <li><a href="#">About</a></li>
+                <li><a href="#">For Bussiness</a></li>
+                <li><a href="#">Suggestion</a></li>
+                <li><a href="#">Help & FAQS</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Principe</a></li>
+            </ul>
+        </div>
+        <div style="margin-top: 30px;color:blanchedalmond">
+            <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp; Copyright 2013 CompanyName
+        </div>
+        <div>
+             <ul class="breadcrumb">
+                <li><a href="#">Privasi</a></li>
+                <li><a href="#">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>

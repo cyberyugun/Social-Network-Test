@@ -1,0 +1,301 @@
+<section>
+    <div class="container" style="padding-top:50px"> 
+        <br>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-5">
+                <span style="font-size: 18px;color:blanchedalmond">Videos</span>
+                <div class="plate img-container">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[0]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[0]['urlToImage']}}" alt="" height="310" width="500">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[0]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="310" width="500">
+                    <div class="bottom-left">
+                        <span class="fontRegular20" *ngIf="this.dataitemHeadlineus[0]['author'] !== null">{{this.dataitemHeadlineus[0]['author'].slice(0,15)}}</span>
+                        <span class="fontRegular20" *ngIf="this.dataitemHeadlineus[0]['author'] === null">Data Null</span>
+                        <p class="fontRegular15" *ngIf="this.dataitemHeadlineus[0]['author'] !== null" style="margin-bottom: 0px;">{{this.dataitemHeadlineus[0]['title'].slice(0,20)}}</p>
+                        <p class="fontRegular15" *ngIf="this.dataitemHeadlineus[0]['author'] === null" style="margin-bottom: 0px;">Data Null</p>
+                    </div>
+                    <div class="bottom-right fontRegular15"><span>312321 views</span></div>
+                </div><br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="plate img-container">
+                            <img class="card-img" *ngIf="this.dataitemHeadlineus[1]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[1]['urlToImage']}}" alt="" height="140px" width="200px">
+                            <img class="card-img" *ngIf="this.dataitemHeadlineus[1]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="140px" width="200px">
+                            <div class="bottom-left">
+                                <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[1]['title'] !== null">{{this.dataitemHeadlineus[1]['title'].slice(0,10)}}</span>
+                                <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[1]['title'] === null">Data Null</span>
+                            </div>
+                            <div class="bottom-right fontRegular15"><span>312321 views</span></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="plate img-container">
+                            <img class="card-img" *ngIf="this.dataitemHeadlineus[2]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[2]['urlToImage']}}" alt="" height="140px" width="200px">
+                            <img class="card-img" *ngIf="this.dataitemHeadlineus[2]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="140px" width="200px">
+                            <div class="bottom-left">
+                                <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[2]['title'] !== null">{{this.dataitemHeadlineus[2]['title'].slice(0,10)}}</span>
+                                <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[2]['title'] === null">Data Null</span>
+                            </div>
+                            <div class="bottom-right fontRegular15"><span>312321 views</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <span style="font-size: 10px;color:blanchedalmond;" align="center"><a [routerLink]="[ '/video']">Browse all videos</a></span>
+                <div class="plate img-container">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[4]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[4]['urlToImage']}}" alt="" height="140px" width="150px">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[4]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="140px" width="150px">
+                    <div class="bottom-left">
+                        <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[4]['title'] !== null">{{this.dataitemHeadlineus[4]['title'].slice(0,10)}}</span>
+                        <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[4]['title'] === null">Data Null</span>
+                    </div>
+                    <div class="bottom-right fontRegular15"><span>312321 views</span></div>
+                </div><br>
+                <div class="col-sm-13 col-md-13 col-lg-13">
+                    <div class="plate img-container">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[5]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[5]['urlToImage']}}" alt="" height="140px" width="150px">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[5]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="140px" width="150px">
+                        <div class="bottom-left">
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[5]['title'] !==null">{{this.dataitemHeadlineus[5]['title'].slice(0,10)}}</span>
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[5]['title'] === null">Data Null</span>
+                        </div>
+                        <div class="bottom-right fontRegular15"><span>312321 views</span></div>
+                    </div>
+                </div><br>
+                <div class="col-sm-13 col-md-13 col-lg-13">
+                    <div class="plate">
+                        <!-- <img class="card-img" src="https://placehold.it/600x340" alt="" height="140px" width="150px"> -->
+                        <div class="button-image">
+                            <div style="margin-top: 50px;">
+                                <div style="margin-left: 20%;">
+                                    <div class="upload">
+                                        <i class="fa fa-upload" style="color: blanchedalmond;"></i>
+                                    </div>
+                                    <div style="margin-top: -38px;color:blanchedalmond;text-indent: 50px;">
+                                        <span>Upload</span>
+                                        <p style="line-height: 8px;">Your Own Video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <span style="font-size: 18px;color:blanchedalmond">Activity</span>
+                <div style="text-align: end;margin-top: -25px;">
+                    <span style="font-size: 10px;color:blanchedalmond">View timeline / Filter activities</span>
+                </div>
+                <hr style="border-top:3px solid blanchedalmond;margin-top: 0px;">
+                <div class="scrollbar1">
+                    <table style="width: 100%;">
+                        <div class="trend-entry d-flex" *ngFor="let head of dataitemHeadlineus">
+                            <div class="number align-self-start"><img style="height:60px;width:70px" class="card-img" *ngIf="head['urlToImage'] !== undefined" src="{{head['urlToImage']}}" alt=""></div>&nbsp;&nbsp;
+                            <div class="number align-self-start"><img style="height:60px;width:70px" class="card-img" *ngIf="head['urlToImage'] === undefined" src="{{head['urlToImage']}}" alt=""></div>&nbsp;&nbsp;
+                            <div class="trend-contents">
+                            <h2 *ngIf="head['author'] !== null && head['author'] !== ''">{{head['author'].slice(0,15)}}</h2>
+                            <h2 *ngIf="head['author'] === null || head['author'] === ''">data author kosong</h2>
+                            <div class="post-meta">
+                                <span class="d-block">{{head['title'].slice(0,25)}}</span>
+                                <span class="date-read"><span class="mx-1"><i class="fa fa-heart-o"></i></span>{{head['publishedAt'] | timeAgo}}<span
+                                    class="icon-star2"></span></span>
+                            </div>
+                            </div>
+                        </div>
+                    </table>
+                </div>
+                <hr style="border-top:3px solid blanchedalmond;margin-top: 0px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container" style="padding-top:50px">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-5">
+                <span style="font-size: 18px;color:blanchedalmond">People</span>
+                <div class="plate img-container">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[6]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[6]['urlToImage']}}" alt="" height="310" width="500">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[6]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="310" width="500">
+                    <div class="bottom-left">
+                        <span class="fontRegular20" *ngIf="this.dataitemHeadlineus[6]['author'] !== null">{{this.dataitemHeadlineus[6]['author'].slice(0,15)}}</span>
+                        <span class="fontRegular20" *ngIf="this.dataitemHeadlineus[6]['author'] === null">Data Null</span>
+                        <p class="fontRegular15" style="margin-bottom: 0px;margin-left: -13px;" *ngIf="this.dataitemHeadlineus[7]['title'] !== null">{{this.dataitemHeadlineus[7]['title'].slice(0,10)}}</p>
+                        <p class="fontRegular15" style="margin-bottom: 0px;margin-left: -13px;" *ngIf="this.dataitemHeadlineus[7]['title'] === null">Data Null</p>
+                    </div>
+                    <div class="bottom-right fontRegular15"><span>312321 views</span></div>
+                </div><br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="plate img-container">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[7]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[7]['urlToImage']}}" alt="" height="140px" width="200px">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[7]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="140px" width="200px">
+                        <div class="bottom-left">
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[8]['title'] !== null">{{this.dataitemHeadlineus[8]['title'].slice(0,10)}}</span>
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[8]['title'] === null">Data Null</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="plate img-container">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[8]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[8]['urlToImage']}}" alt="" height="140px" width="200px">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[8]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="140px" width="200px">
+                        <div class="bottom-left">
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[9]['title'] !== null">{{this.dataitemHeadlineus[9]['title'].slice(0,10)}}</span>
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[9]['title'] === null">Data Null</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <span style="font-size: 10px;color:blanchedalmond;" align="center">View all</span>
+                <div class="plate img-container">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[9]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[9]['urlToImage']}}" alt="" height="140px" width="150px">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[9]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="140px" width="150px">
+                    <div class="bottom-left">
+                        <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[10]['title'] !== null">{{this.dataitemHeadlineus[10]['title'].slice(0,10)}}</span>
+                        <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[10]['title'] === null">Data Null</span>
+                    </div>
+                </div><br>
+                <div class="col-sm-13 col-md-13 col-lg-13">
+                    <div class="plate img-container">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[10]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[10]['urlToImage']}}" alt="" height="140px" width="150px">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[10]['urlToImage'] === undefined" src="https://placehold.it/400x50" alt="" height="140px" width="150px">
+                        <div class="bottom-left">
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[11]['title'] !==null">{{this.dataitemHeadlineus[11]['title'].slice(0,10)}}</span>
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[11]['title'] === null">Data Null</span>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="col-sm-13 col-md-13 col-lg-13">
+                    <div class="plate">
+                        <div class="button-image">
+                            <div style="margin-top: 50px;">
+                                <div style="margin-left: 20%;">
+                                    <div class="upload">
+                                        <i class="fa fa-dot-circle-o" style="color: blanchedalmond;"></i>
+                                    </div>
+                                    <div style="margin-top: -38px;color:blanchedalmond;text-indent: 50px;">
+                                        <span>Show</span>
+                                        <p style="line-height: 8px;">Your Work</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <span style="font-size: 18px;color:blanchedalmond">Channels</span>
+                <div style="text-align: end;margin-top: -25px;">
+                    <span style="font-size: 10px;color:blanchedalmond"><a [routerLink]="[ '/channel']">Browse all channels</a></span>
+                </div>
+                <hr style="border-top:3px solid blanchedalmond;margin-top: 0px;">
+                <div class="scrollbar2">
+                    <table style="width: 100%;">
+                        <div class="trend-entry d-flex" *ngFor="let source of dataItemSource">
+                            <div class="img-container">
+                                <img style="height:100px;width:170px" class="card-img" src="https://placehold.it/600x340" alt=""  height="100px" width="100px">
+                                <div class="bottom-left"><span class="fontRegular15">{{source['name']}}</span></div>
+                            </div>&nbsp;&nbsp;
+                            <div class="img-container">
+                                <img style="height:100px;width:170px" class="card-img" src="https://placehold.it/600x340" alt="" height="100px" width="100px">
+                                <div class="bottom-left"><span class="fontRegular15">{{source['name']}}</span></div>
+                            </div>
+                        </div>
+                    </table>
+                </div>
+                <hr style="border-top:3px solid blanchedalmond;margin-top: 0px;">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="padding-top:50px">
+        <div>
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-5 margin">
+                <span style="font-size: 18px;color:blanchedalmond">Documents</span>
+                <div class="plate img-container">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[13]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[13]['urlToImage']}}" alt="" height="310" width="500">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[13]['urlToImage'] === undefined" src="https://placehold.it/600x340" alt="" height="310" width="500">
+                    <div class="bottom-left">
+                        <span class="fontRegular20" *ngIf="this.dataitemHeadlineus[13]['author'] !== null">{{this.dataitemHeadlineus[13]['author'].slice(0,15)}}</span>
+                        <span class="fontRegular20" *ngIf="this.dataitemHeadlineus[13]['author'] === null">Data Null</span>
+                        <p class="fontRegular15" *ngIf="this.dataitemHeadlineus[13]['title'] !== null" style="margin-bottom: 0px;margin-left: -13px;">{{this.dataitemHeadlineus[13]['title'].slice(0,10)}}</p>
+                        <p class="fontRegular15" *ngIf="this.dataitemHeadlineus[13]['title'] === null" style="margin-bottom: 0px;margin-left: -13px;">Data Null</p>
+                    </div>
+                    <div class="bottom-right fontRegular15"><span>312321 views</span></div>
+                </div><br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="plate img-container">
+                            <img class="card-img" *ngIf="this.dataitemHeadlineus[14]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[14]['urlToImage']}}" alt="" height="140px" width="200px">
+                            <img class="card-img" *ngIf="this.dataitemHeadlineus[14]['urlToImage'] === undefined" src="https://placehold.it/600x340" alt="" height="140px" width="200px">
+                            <div class="bottom-left">
+                                <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[14]['title'] !== null">{{this.dataitemHeadlineus[14]['title'].slice(0,10)}}</span>
+                                <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[14]['title'] === null">Data Null</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="plate img-container">
+                            <img class="card-img" *ngIf="this.dataitemHeadlineus[15]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[15]['urlToImage']}}" alt="" height="140px" width="200px">
+                            <img class="card-img" *ngIf="this.dataitemHeadlineus[15]['urlToImage'] === undefined" src="https://placehold.it/600x340" alt="" height="140px" width="200px">
+                            <div class="bottom-left">
+                                <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[15]['title'] !== null">{{this.dataitemHeadlineus[15]['title'].slice(0,10)}}</span>
+                                <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[15]['title'] === null">Data Null</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3 margin">
+                <span style="font-size: 10px;color:blanchedalmond;">Browse all documents</span>
+                <div class="plate img-container">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[16]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[16]['urlToImage']}}" alt="" height="140px" width="150px">
+                    <img class="card-img" *ngIf="this.dataitemHeadlineus[16]['urlToImage'] === undefined" src="https://placehold.it/600x340" alt="" height="140px" width="150px">
+                    <div class="bottom-left">
+                        <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[16]['title'] !== null">{{this.dataitemHeadlineus[16]['title'].slice(0,10)}}</span>
+                        <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[16]['title'] === null">Data Null</span>
+                    </div>
+                </div><br>
+                <div class="col-sm-13 col-md-13 col-lg-13">
+                    <div class="plate img-container">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[17]['urlToImage'] !== undefined" src="{{this.dataitemHeadlineus[17]['urlToImage']}}" alt="" height="140px" width="150px">
+                        <img class="card-img" *ngIf="this.dataitemHeadlineus[17]['urlToImage'] === undefined" src="https://placehold.it/600x340" alt="" height="140px" width="150px">
+                        <div class="bottom-left">
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[17]['title'] !== null">{{this.dataitemHeadlineus[17]['title'].slice(0,10)}}</span>
+                            <span class="fontRegular15" *ngIf="this.dataitemHeadlineus[17]['title'] === null">Data Null</span>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="col-sm-13 col-md-13 col-lg-13">
+                    <div class="plate">
+                        <div class="button-image">
+                            <div style="margin-top: 50px;">
+                                <div style="margin-left: 20%;">
+                                    <div class="upload">
+                                        <i class="fa fa-plus" style="color: blanchedalmond;"></i>
+                                    </div>
+                                    <div style="margin-top: -38px;color:blanchedalmond;text-indent: 50px;">
+                                        <span>Share</span>
+                                        <p style="line-height: 8px;">Your Document</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

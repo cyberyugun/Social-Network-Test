@@ -1,0 +1,251 @@
+.plate {
+  padding: 5px;
+}
+
+.trend-entry {
+  margin-bottom: 30px;
+  color: blanchedalmond;
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.trend-entry .number {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  font-size: 20px;
+  line-height: 1;
+  color: #ccc;
+}
+
+.align-self-start {
+  -ms-flex-item-align: start !important;
+  align-self: flex-start !important;
+}
+
+.trend-entry .trend-contents h2 {
+  font-size: 15px;
+}
+
+.post-meta {
+  font-size: .8rem;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.date-read {
+  color: blanchedalmond;
+}
+
+.card-img {
+
+  border-radius: 0px !important;
+}
+
+@media(min-width:992px){
+    .margin{
+        margin-top: -250px;
+    }
+}
+
+.breadcrumb>li+li:before {
+    background: none;
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+
+/* .text_2 .breadcrumb {
+  background: none;
+  padding-left: 0;
+} */
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background: none;
+  padding-left: 0;
+  /* background-color: #f5f5f5; */
+  border-radius: 4px;
+}
+
+.breadcrumb a {
+  color: blanchedalmond;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+#custom-search-input {
+  margin: 0;
+  margin-top: 10px;
+  padding-left: 10px;
+  width: 50%;
+}
+
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 0px;
+  background: blanchedalmond;
+}
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #D9230F;
+}
+
+.search-query:focus+button {
+  z-index: 3;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #D9230F;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #D9230F;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #D9230F;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #D9230F;
+}
+
+.btn {
+  background-color: blanchedalmond;
+  border: none;
+  color: #D9230F;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 10px;
+  line-height: 1;
+  border-radius: 0px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: orangered;
+}
+
+.badge-blanchedalmond {
+  color: #D9230F;
+  background-color: blanchedalmond;
+}
+
+.button-image{
+  border: 1px solid blanchedalmond;
+  height: 140px;
+  cursor: pointer;
+}
+
+.button-image:hover{
+  background-color: orangered;
+}
+
+.upload{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border:1px solid blanchedalmond;
+  text-align: center;
+}
+
+.img-container{
+  position: relative;
+  text-align: center;
+  color: #D9230F;
+}
+
+.scrollbar1{
+  height: 469px;
+  overflow-y: scroll;
+}
+
+.scrollbar2 {
+    width: 360px;
+    height: 800px;
+    overflow-y: scroll;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.fontRegular20{
+  font-size: 20px;
+}
+
+.fontRegular15{
+  font-size: 15px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* @media(max-width:991px){
+    .margin{
+
+    }
+} */
