@@ -287,7 +287,7 @@ export class SearchComponent implements OnInit {
     // });
     
 
-    this.dataitemHeadlineus = this.datatest.filter(data=>data.title.toLowerCase().includes(this.id.toLowerCase()) || data.description.toLowerCase().includes(this.id.toLowerCase()))
+    this.dataitemHeadlineus = this.datatest.filter(data=>data.title.toLowerCase().match(this.id.toLowerCase()) || data.description.toLowerCase().match(this.id.toLowerCase()))
         });
     
   }
